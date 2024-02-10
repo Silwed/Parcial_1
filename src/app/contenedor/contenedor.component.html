@@ -1,0 +1,11 @@
+<h1>Componente Contenedor Busqueda</h1>
+<hr>
+<app-buscar></app-buscar>
+<h3>Resultado</h3>
+<div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 justify-content-center" [hidden]="false">
+ 
+  <ng-container *ngFor="let obj of photos">
+  <app-resultado [obj]="obj" ></app-resultado>
+</ng-container>
+</div>
+

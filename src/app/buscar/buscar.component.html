@@ -1,0 +1,7 @@
+<h3>Componente buscar</h3>
+<input type="text"
+ placeholder="Buscar"
+ class="form-control"
+ [(ngModel)]="parametroBuscar "
+ (keyup.enter)="buscar()"
+ (click)="mostrar()">
